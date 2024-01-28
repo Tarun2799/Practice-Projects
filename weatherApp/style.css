@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212122;
+}
+
+.card{
+    width: 90%;
+    max-width: 30rem;
+    /* background: linear-gradient(135deg, #00feba,#5b548a); */
+    /* background: linear-gradient(135deg, #ddd6f3 , #faaca8); */
+    background: linear-gradient(135deg, #614385 ,#516395);
+    color: #fff;
+    margin: 5.5rem auto 0;
+    border-radius: 1.5rem;
+    padding: 2.5rem 2.1rem;
+    text-align: center;
+    
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.7rem 1.5rem;
+    height: 3.7rem;
+    border-radius: 1.8rem;
+    flex: 1; /*It is a short form for flex-grow, flex-shrink, and flex-basis combined.*/
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+/*
+flex: 1 makes the flex item flexible, allowing it to grow and shrink according to the available space in the container. It is particularly useful when you want to distribute extra space equally among flex items.
+
+flex-grow: 1: The item will grow and take up any available space in the container equally along the main axis.
+flex-shrink: 1: The item will shrink if there’s not enough space along the main axis.
+flex-basis: 0: The item’s initial main size is 0, but it will grow or shrink according to the available space.
+
+*/
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 1.2rem;
+}
+
+.weather-icon{
+    width: 10.55rem;
+    margin-top: 1.9rem;
+}
+
+.weather h1{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-top: -0.7rem;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.3rem;
+    margin-top: 3.1rem;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 2.5rem;
+    margin-right: 0.6rem;
+}
+
+.humidity, .wind{
+    font-size: 1.6rem;
+    margin-top: -0.4rem;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    display: none;
+}
